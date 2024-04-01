@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import { Layer, Line, Stage } from 'react-konva';
 

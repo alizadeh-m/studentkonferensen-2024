@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import DrawArea, { ToolType } from './DrawArea/DrawArea';
 import styles from './DrawView.module.css';

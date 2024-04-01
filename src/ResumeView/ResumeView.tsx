@@ -4,6 +4,8 @@ import styles from './ResumeView.module.css';
 import Image from 'next/image';
 
 const ResumeView = () => {
+  const windowWidth = typeof window !== 'undefined' ? window.innerWidth : 0;
+  const isMobile = windowWidth < 768;
   return (
     <div className={styles.wrapper}>
       <div className={styles.linkWrapper}>
@@ -16,7 +18,7 @@ const ResumeView = () => {
         </Link>
       </div>
       <Image
-        width={500}
+        width={isMobile ? 400: 500}
         height={800}
         src='/images/resume-steve.jpg'
         alt='steve-jobs-resume'

@@ -1,15 +1,16 @@
+'use client'
+
 import dynamic from 'next/dynamic';
 import Spinner from '../../src/common/Spinner/Spinner';
 import Head from 'next/head';
-import styles from '../../styles/layout.module.css';
-import React from 'react';
+import styles from '../layout.module.css';
 
 const DrawView = dynamic(
   () => import('../../src/DrawView/DrawView'),
   { loading: () => <Spinner />, ssr: false }
 );
 
-export default function Index() {
+export default function Page() {
   return (
     <>
       <Head>

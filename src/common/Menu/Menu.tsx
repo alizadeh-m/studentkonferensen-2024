@@ -1,11 +1,11 @@
+'use client'
 import styles from './Menu.module.css';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 import MenuMobile from './MenuMobile/MenuMobile';
-import React from 'react';
 
 const Menu = () => {
-  const { asPath: pathName } = useRouter();
+  const pathName = usePathname();
   const menuItems = [
     { title: 'Start', link: '/' },
     { title: 'Mitt CV', link: '/resume' },
