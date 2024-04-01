@@ -1,4 +1,8 @@
 {
+  "name": "studentkonferensen-2024-demo",
+  "author": "Maryam Alizadeh",
+  "version": "1.0.0",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "build": "next build",
