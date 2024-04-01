@@ -5,10 +5,7 @@
 }
 
 .menu {
-  text-align: center;
-  color: #003349;
-  margin: 0 auto;
-  max-width: 1024px;
+  display: none;
 }
 
 .menuLink {
@@ -41,3 +38,15 @@
   border-bottom: 2px solid #003349;
 }
 
+@media screen and (min-width: 768px) {
+  .menu {
+    text-align: center;
+    color: #003349;
+    margin: 0 auto;
+    max-width: 1024px;
+    display: block;
+  }
+  .menuWrapper {
+    padding: 40px 0 8px;
+  }
+}

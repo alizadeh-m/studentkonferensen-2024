@@ -6,11 +6,12 @@
 .heading {
     font-size: 32px;
     color: #003349;
+    text-align: center;
 }
 
 .drawingArea {
-    width: 605px;
-    height: 605px;
+    width: 90vw;
+    height: 500px;
     background-color: lightgrey;
     border: 2px solid red;
     margin: 0 auto;
@@ -23,4 +24,11 @@
 .label {
     display: block;
     padding-bottom: 6px;
+}
+
+@media screen and (min-width: 768px) {
+    .drawingArea {
+        width: 605px;
+        height: 605px;
+    }
 }

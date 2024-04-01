@@ -1,0 +1,40 @@
+.menuBurgerWrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 8px;
+}
+
+.menuLinkWrapper {
+  padding: 0;
+  margin-bottom:0 ;
+}
+
+.menuLinkItem {
+  list-style-type: none;
+  padding: 8px 0 8px 24px;
+  border-bottom: 1px rgba(128, 128, 128, 0.1) solid;
+  display: flex;
+}
+
+.menuLink {
+  text-decoration: none;
+}
+
+.menuLinkItem:last-child {
+  border-bottom: none;
+  padding-bottom: 12px;
+}
+
+.menuLinkSelected {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .menuBurgerWrapper {
+    display: none;
+  }
+  .menuLinkWrapper {
+    display: none;
+  }
+}

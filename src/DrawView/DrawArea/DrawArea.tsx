@@ -19,7 +19,8 @@ const DrawArea = (props: Props) => {
   // const [tool, setTool] = React.useState('pen');
   const [lines, setLines] = React.useState<any>([]);
   const isDrawing = React.useRef(false);
-
+  const windowWidth = typeof window !== 'undefined' ? window.innerWidth : 0;
+  const isMobile = windowWidth < 768;
   const handleMouseDown = (e: any) => {
     isDrawing.current = true;
     const pos = e.target.getStage().getPointerPosition();
@@ -49,11 +50,11 @@ const DrawArea = (props: Props) => {
   return (
     <>
       <Stage
-        width={600}
-        height={600}
         onMouseDown={handleMouseDown}
         onMousemove={handleMouseMove}
         onMouseup={handleMouseUp}
+        width={isMobile ? undefined : 600}
+        height={isMobile ? undefined: 600}
       >
         <Layer>
           {lines.map((line: any, i: number) => (
@@ -75,5 +76,4 @@ const DrawArea = (props: Props) => {
   );
 };
 
-export { DrawArea };
 export default DrawArea;
