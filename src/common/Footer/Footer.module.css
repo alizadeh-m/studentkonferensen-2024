@@ -1,0 +1,32 @@
+.footer {
+  width: 100%;
+  background-color: rgb(215, 210, 203, 0.5);
+  padding-bottom: 40px;
+  padding-top: 16px;
+}
+
+.footerWrapper {
+  display: inline;
+  text-align: center;
+  margin: 20px 0;
+  background-color: rgb(215, 210, 203, 0.5);
+}
+
+.footerName {
+  max-width: 1024px;
+  text-align: center;
+  margin: 0 auto;
+  color: #003349;
+  display: block;
+  padding: 8px 0 16px 0;
+}
+
+.footerLinkWrapper {
+  display: block;
+  margin-top: 4px;
+}
+
+.footerLinkName {
+  color: #003349;
+  padding: 0 4px;
+}

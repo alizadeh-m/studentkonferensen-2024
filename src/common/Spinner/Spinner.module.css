@@ -1,0 +1,43 @@
+.wrapper {
+  width: 100%;
+  min-height: 800px;
+  text-align: center;
+}
+
+.spinner {
+  animation: rotate 2s linear infinite;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  margin-top: 50px;
+  width: 75px;
+  height: 75px;
+
+  & .path {
+    stroke: rgb(0, 51, 73, 0.85);
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+  }
+
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}

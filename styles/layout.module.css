@@ -1,0 +1,12 @@
+.LayoutBody {
+  margin: 0;
+}
+
+.LayoutWrapper {
+  margin: 16px 100px;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+
+  min-height: 80vh;
+}

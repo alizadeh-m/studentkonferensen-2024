@@ -1,0 +1,43 @@
+.menuWrapper {
+  background-color: rgb(215, 210, 203, 0.5);
+  padding: 40px 0 8px;
+  font-family: "Roboto", sans-serif;
+}
+
+.menu {
+  text-align: center;
+  color: #003349;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.menuLink {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #003349;
+}
+
+.menuLinkWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.menuLinkItem {
+  display: contents;
+  list-style-type: none;
+}
+
+.menuLinkExternalWrapper {
+  display: flex;
+}
+
+.menuLinkExternal {
+  padding-left: 2px;
+  padding-top: 2px;
+}
+
+.menuLinkSelected {
+  border-bottom: 2px solid #003349;
+}
+

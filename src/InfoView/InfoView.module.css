@@ -1,0 +1,31 @@
+.mainWrapper {
+    color: #003349;
+    max-width: 1024px;
+}
+
+.heading {
+    font-size: 32px;
+    color: #003349;
+}
+
+.sectionWrapper {
+    background-color: rgb(215, 210, 203, 0.5);
+    padding: 8px 16px 16px;
+    margin: 32px 0;
+    border-radius: 15px;
+    border: 1px solid rgb(215, 210, 203, 0.5);
+    display: block;
+    color: #003349;
+    box-shadow: 3px 3px 3px rgb(215, 210, 203);
+
+}
+.sectionList {
+    padding-left: 24px;
+}
+
+.link {
+    text-decoration: underline;
+    display: block;
+    padding: 4px 0;
+    color: inherit;
+}

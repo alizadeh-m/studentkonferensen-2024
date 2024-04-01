@@ -1,0 +1,18 @@
+.main {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 56px;
+  padding-top: 36px;
+}
+
+.heading {
+  font-size: 46px;
+  color: #003349;
+}
+
+.notFound {
+  min-height: 80vh;
+}

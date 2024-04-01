@@ -1,0 +1,16 @@
+.wrapper {
+  height: 100%;
+  display: inline-block;
+}
+
+.linkWrapper {
+  display: block;
+  margin: 16px 0;
+  text-align: center;
+}
+
+.link {
+  text-align: center;
+  color: inherit;
+  padding: 0 4px;
+}
